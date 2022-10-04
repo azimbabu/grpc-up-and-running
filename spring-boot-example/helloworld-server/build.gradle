@@ -1,0 +1,43 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    ext {
+        springBootVersion = '2.5.8'
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+plugins {
+    id 'java'
+    id 'idea'
+}
+
+apply plugin: 'io.spring.dependency-management'
+
+repositories {
+    // only for local development as helloworld-service-contract is published only locally
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.springframework.boot:spring-boot-starter'
+    compile 'net.devh:grpc-server-spring-boot-starter:2.13.1.RELEASE'
+    compile 'org.azimbabu:helloworld-service-contract:1.0-SNAPSHOT'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '6.5' //version required
+}
+
+group 'org.azimbabu'
+version '1.0-SNAPSHOT'

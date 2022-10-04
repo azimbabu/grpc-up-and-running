@@ -67,4 +67,8 @@ include 'ch07:testing-grpc:product-info-client'
 findProject(':ch07:testing-grpc:product-info-client')?.name = 'product-info-client'
 include 'ch07:loadtesting:hello-world-server'
 findProject(':ch07:loadtesting:hello-world-server')?.name = 'hello-world-server'
+include 'spring-boot-example:helloworld-service-contract'
+findProject(':spring-boot-example:helloworld-service-contract')?.name = 'helloworld-service-contract'
+include 'spring-boot-example:helloworld-server'
+findProject(':spring-boot-example:helloworld-server')?.name = 'helloworld-server'
 

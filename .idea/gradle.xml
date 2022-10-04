@@ -64,6 +64,9 @@
             <option value="$PROJECT_DIR$/ch07/testing-grpc/product-info-server" />
             <option value="$PROJECT_DIR$/loadbalancing" />
             <option value="$PROJECT_DIR$/loadbalancing/echo-server" />
+            <option value="$PROJECT_DIR$/spring-boot-example" />
+            <option value="$PROJECT_DIR$/spring-boot-example/helloworld-server" />
+            <option value="$PROJECT_DIR$/spring-boot-example/helloworld-service-contract" />
           </set>
         </option>
       </GradleProjectSettings>
