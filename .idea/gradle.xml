@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/ch02" />
+            <option value="$PROJECT_DIR$/ch02/product-info-client" />
+            <option value="$PROJECT_DIR$/ch02/product-info-server" />
+            <option value="$PROJECT_DIR$/ch03" />
+            <option value="$PROJECT_DIR$/ch03/order-service-client" />
+            <option value="$PROJECT_DIR$/ch03/order-service-server" />
+            <option value="$PROJECT_DIR$/ch05" />
+            <option value="$PROJECT_DIR$/ch05/cancellation" />
+            <option value="$PROJECT_DIR$/ch05/cancellation/order-service-client" />
+            <option value="$PROJECT_DIR$/ch05/cancellation/order-service-server" />
+            <option value="$PROJECT_DIR$/ch05/compression" />
+            <option value="$PROJECT_DIR$/ch05/compression/order-service-client" />
+            <option value="$PROJECT_DIR$/ch05/compression/order-service-server" />
+            <option value="$PROJECT_DIR$/ch05/deadlines" />
+            <option value="$PROJECT_DIR$/ch05/deadlines/order-service-client" />
+            <option value="$PROJECT_DIR$/ch05/deadlines/order-service-server" />
+            <option value="$PROJECT_DIR$/ch05/error-handling" />
+            <option value="$PROJECT_DIR$/ch05/error-handling/order-service-client" />
+            <option value="$PROJECT_DIR$/ch05/error-handling/order-service-server" />
+            <option value="$PROJECT_DIR$/ch05/interceptors" />
+            <option value="$PROJECT_DIR$/ch05/interceptors/order-service-client" />
+            <option value="$PROJECT_DIR$/ch05/interceptors/order-service-server" />
+            <option value="$PROJECT_DIR$/ch05/loadbalancing" />
+            <option value="$PROJECT_DIR$/ch05/loadbalancing/echo-client" />
+            <option value="$PROJECT_DIR$/ch05/loadbalancing/echo-server" />
+            <option value="$PROJECT_DIR$/ch05/metadata" />
+            <option value="$PROJECT_DIR$/ch05/metadata/order-service-client" />
+            <option value="$PROJECT_DIR$/ch05/metadata/order-service-server" />
+            <option value="$PROJECT_DIR$/ch05/multiplexing" />
+            <option value="$PROJECT_DIR$/ch05/multiplexing/order-service-client" />
+            <option value="$PROJECT_DIR$/ch05/multiplexing/order-service-server" />
+            <option value="$PROJECT_DIR$/ch06" />
+            <option value="$PROJECT_DIR$/ch06/basic-authentication" />
+            <option value="$PROJECT_DIR$/ch06/basic-authentication/product-info-client" />
+            <option value="$PROJECT_DIR$/ch06/basic-authentication/product-info-server" />
+            <option value="$PROJECT_DIR$/ch06/jwt-authentication" />
+            <option value="$PROJECT_DIR$/ch06/jwt-authentication/jwt-auth-client" />
+            <option value="$PROJECT_DIR$/ch06/jwt-authentication/jwt-auth-server" />
+            <option value="$PROJECT_DIR$/ch06/mutual-tls-channel" />
+            <option value="$PROJECT_DIR$/ch06/mutual-tls-channel/product-info-client" />
+            <option value="$PROJECT_DIR$/ch06/mutual-tls-channel/product-info-server" />
+            <option value="$PROJECT_DIR$/ch06/secure-channel" />
+            <option value="$PROJECT_DIR$/ch06/secure-channel/product-info-client" />
+            <option value="$PROJECT_DIR$/ch06/secure-channel/product-info-server" />
+            <option value="$PROJECT_DIR$/ch06/token-based-authentication" />
+            <option value="$PROJECT_DIR$/ch06/token-based-authentication/product-info-client" />
+            <option value="$PROJECT_DIR$/ch06/token-based-authentication/product-info-server" />
+            <option value="$PROJECT_DIR$/ch07" />
+            <option value="$PROJECT_DIR$/ch07/loadtesting" />
+            <option value="$PROJECT_DIR$/ch07/loadtesting/hello-world-server" />
+            <option value="$PROJECT_DIR$/ch07/testing-grpc" />
+            <option value="$PROJECT_DIR$/ch07/testing-grpc/product-info-client" />
+            <option value="$PROJECT_DIR$/ch07/testing-grpc/product-info-server" />
+            <option value="$PROJECT_DIR$/loadbalancing" />
+            <option value="$PROJECT_DIR$/loadbalancing/echo-server" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
