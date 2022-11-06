@@ -71,4 +71,8 @@ include 'spring-boot-example:helloworld-service-contract'
 findProject(':spring-boot-example:helloworld-service-contract')?.name = 'helloworld-service-contract'
 include 'spring-boot-example:helloworld-server'
 findProject(':spring-boot-example:helloworld-server')?.name = 'helloworld-server'
+include 'ch07:grpc-docker:product-info-server'
+findProject(':ch07:grpc-docker:product-info-server')?.name = 'product-info-server'
+include 'ch07:grpc-docker:product-info-client'
+findProject(':ch07:grpc-docker:product-info-client')?.name = 'product-info-client'
 
