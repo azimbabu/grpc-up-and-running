@@ -2,6 +2,7 @@ package ecommerce;
 
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
+import io.grpc.protobuf.services.ProtoReflectionService;
 
 import java.io.IOException;
 import java.util.logging.Logger;
@@ -20,7 +21,13 @@ public class ProductInfoServer {
 
   private void start() throws IOException {
     /* The port on which the server should run */
-    server = ServerBuilder.forPort(PORT).addService(new ProductInfoImpl()).build().start();
+    server =
+        ServerBuilder.forPort(PORT)
+            .addService(new ProductInfoImpl())
+            // Needed to enable server reflection
+            .addService(ProtoReflectionService.newInstance())
+            .build()
+            .start();
     logger.info("Server started, listening up on port=" + PORT);
 
     Runtime.getRuntime()

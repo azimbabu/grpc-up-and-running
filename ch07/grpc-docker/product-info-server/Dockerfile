@@ -10,6 +10,6 @@ EXPOSE 50051
 
 RUN mkdir /app
 
-COPY --from=build /home/gradle/src/build/libs/*.jar /app/product-info-server.jar
+COPY --from=build /home/gradle/src/build/libs/*.jar /app/
 
 ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom","-jar","/app/product-info-server.jar"]
