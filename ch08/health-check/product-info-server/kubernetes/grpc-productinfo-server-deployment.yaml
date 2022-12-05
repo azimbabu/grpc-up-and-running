@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grpc-productinfo-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: grpc-productinfo-server
+  template:
+    metadata:
+      labels:
+        app: grpc-productinfo-server
+    spec:
+      containers:
+        - name: grpc-productinfo-server
+          image: azimbabu/grpc-productinfo-server-healthcheck:latest
+          imagePullPolicy: IfNotPresent
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+          ports:
+            - containerPort: 50051
+          readinessProbe:
+            exec:
+              command: [ "/bin/grpc_health_probe", "--addr=:50051" ]
+            initialDelaySeconds: 5
+          livenessProbe:
+            exec:
+              command: [ "/bin/grpc_health_probe", "--addr=:50051" ]
+            initialDelaySeconds: 5
