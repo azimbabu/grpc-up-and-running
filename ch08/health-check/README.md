@@ -1,5 +1,5 @@
 # Health Check
-
+Install grpc-health-probe: https://github.com/grpc-ecosystem/grpc-health-probe#installation
 ````
 % grpc_health_probe --addr=localhost:50051
 status: SERVING
